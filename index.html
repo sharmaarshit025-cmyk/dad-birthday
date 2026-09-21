@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Dad ❤️</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- Falling particles -->
+    <div id="particles"></div>
+
+    <!-- Music -->
+    <audio id="birthdayMusic" loop>
+        <source src="{{ url_for('static', filename='music/birthday.mp3') }}"
+                type="audio/mpeg">
+    </audio>
+
+    <button class="music-btn" onclick="toggleMusic()">
+        🎵 Music
+    </button>
+
+
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">A Special Day For Someone Special</p>
+
+            <h1>Happy Birthday, Dad ❤️</h1>
+
+            <h2 id="typing"></h2>
+
+            <p class="intro">
+                Today isn't just another day...
+                It's the day we celebrate the most special person
+                in our family.
+            </p>
+
+            <button class="surprise-btn" onclick="showSurprise()">
+                🎁 Open Your Surprise
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- CAKE -->
+
+    <section class="cake-section">
+
+        <h2>🎂 A Cake For The Best Dad</h2>
+
+        <div class="cake">
+
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
+
+            <div class="cake-top"></div>
+            <div class="cake-middle"></div>
+            <div class="cake-bottom"></div>
+
+        </div>
+
+        <p>Make a wish, Dad! ✨</p>
+
+    </section>
+
+
+    <!-- MESSAGE -->
+
+    <section class="message-section">
+
+        <div class="card">
+
+            <h2>💌 A Message From My Heart</h2>
+
+            <p>
+                Dear Dad,
+            </p>
+
+            <p>
+                Thank you for always being there for me,
+                for supporting me, guiding me and believing
+                in me.
+            </p>
+
+            <p>
+                Your hard work, love and sacrifices have
+                taught me so much about life.
+            </p>
+
+            <p>
+                I may not always say it, but I am truly
+                grateful to have you as my father.
+            </p>
+
+            <p class="special">
+                ❤️ You are not just my Dad,
+                you are my inspiration and my hero.
+            </p>
+
+            <p>
+                Happy Birthday, Dad! 🎂🎉
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PHOTO GALLERY -->
+
+    <section class="gallery-section">
+
+        <h2>📸 Beautiful Memories</h2>
+
+        <p class="gallery-intro">
+            Some moments that will always stay close to my heart.
+        </p>
+
+        <div class="gallery">
+
+            <div class="photo">
+                <img src="{{ url_for('static',
+                filename='images/dad1.jpeg') }}"
+                alt="Dad">
+            </div>
+
+            <div class="photo">
+                <img src="{{ url_for('static',
+                filename='images/dad2.jpeg') }}"
+                alt="Dad">
+            </div>
+
+            <div class="photo">
+                <img src="{{ url_for('static',
+                filename='images/dad3.jpeg') }}"
+                alt="Dad">
+            </div>
+
+            <div class="photo">
+                <img src="{{ url_for('static',
+                filename='images/dad4.jpeg') }}"
+                alt="Dad">
+            </div>
+
+            <div class="photo">
+                <img src="{{ url_for('static',
+                filename='images/dad5.jpeg') }}"
+                alt="Dad">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SURPRISE -->
+
+    <section id="surprise" class="surprise-section">
+
+        <div class="surprise-card">
+
+            <div class="gift">🎁</div>
+
+            <h2>One More Thing...</h2>
+
+            <p>
+                No gift can ever be enough to thank you
+                for everything you have done for me.
+            </p>
+
+            <h3>
+                I love you, Dad! ❤️
+            </h3>
+
+            <div class="hearts">
+                ❤️ ❤️ ❤️
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            Made with ❤️ especially for Dad
+        </p>
+
+    </footer>
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
